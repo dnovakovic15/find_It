@@ -1,0 +1,85 @@
+#map-display {
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    width: 90%;
+    min-width: 410px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    box-shadow: 3px 3px 3px black;
+    min-height: 140px;
+    display: flex;
+    text-align: center;
+}
+
+header p {
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50pt;
+    color: white;
+    text-shadow: 3px 3px 2px #ffb58b ;
+}
+
+body {
+	background-color: gray;
+	text-align: center;
+	
+}
+
+.user_input {
+    color: #ffb58b ;
+}
+
+input[value] { 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.user_input::placeholder {
+    color: white;
+}
+
+#menu {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+}
+
+
+#twitter-display {
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: scroll;
+    opacity: .9;
+    box-shadow: 2px 2px 2px black;
+    margin: 0 auto;
+    position: relative;
+    height: 200px;
+    width: 400px;
+    display: none;
+}
+
+#weather-display {
+    height: 120px;
+    width: 120px;
+    background-color: lightgray;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 10px;
+    margin-bottom: 10px;
+    opacity: .9;
+    display: none;
+}
+
+#submit {
+	border-radius: 50px;
+}
+
+.tap-target {
+	background-color: black;
+}

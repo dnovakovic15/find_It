@@ -1,0 +1,64 @@
+.title{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+button {
+  color: #fff;
+  background-color: #6496c8;
+  border: none;
+  font-size: 20px !important;
+  font-weight: bold;
+  margin-left: 4px !important;
+}
+
+button:hover, button.hover {
+  background-color: #417cb8
+}
+
+button:active, button.active {
+  background-color: #417cb8;
+  box-shadow: 0 5px #27496d;
+  transform: translateY(5px);
+}
+
+.image{
+    width: 100%;
+    border:none;
+}
+
+.content{
+    margin-top: 1%;
+}
+.bottom-content{
+    margin-top: 3%;
+}
+
+.rating{
+    color:white;
+    width: 100%;
+    padding-left: 20%;
+}
+
+.group{
+    width: 33%;
+    display: inline-block;
+}
+
+.advance{
+    width: 100%;
+    margin-top: 20%;
+}
+
+#map{
+    margin-top: 2%;
+}
+
+.container{
+    padding-top: 2%;
+    height: 100%;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Find It</title>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    
+    <script type="text/javascript" src="assets/css/materialize-src/js/tapTarget.js"></script>
+
+     
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <p>Find It</p>
+  </header>
+
+  <section>
+
+    <div id="all"> 
+
+      <!-- Map populates here -->
+      <div id="map-display"></div>    
+
+              <!-- Weather populates here -->
+      <div id="twitter-display"></div>
+
+               <!-- Local Tweets populate here -->
+      <div id="traffic-display">
+         <h4>When do you<br>plan to leave?</h4>
+         <div id="timeInput">
+
+           <form class="col s12">
+
+             <div class="input-field col s8">
+               <input class="user_input" id="earlyTime" placeholder="Earliest [hh:mm Military]">
+             </div>
+             <div class="input-field col s8">
+               <input class="user_input" id="lateTime" placeholder="Latest [hh:mm Military]">
+             </div>
+
+             <button id="submit" class="btn">Submit</button>
+           
+           </form>
+
+         </div>
+
+     </div> 
+
+    </div>
+
+  <!-- User input data here -->
+  <a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons"></i></a>
+
+      <!-- Tap Target Structure -->
+      <div id="tap" class="tap-target" data-activates="menu">
+        <div class="tap-target-content">
+            
+            <!-- Materialize form here -->
+            <form class="col s12" id="input_form">
+            
+              <div class="input-field col s12">
+                <input class="user_input" id="start-location" value="Current Location">
+              </div>
+              <div class="input-field col s12">
+                <input class="user_input" id="end-location" placeholder="Destination">
+             </div>              
+              
+              <button id="find-button" class="btn">Submit</button>
+        
+            </form>
+
+        </div>
+      </div>
+
+
+  </section>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWFIyP0ivtZCbMWaqdl7sYS-IIDJkGQHs&libraries=places"></script>
+        <script type="text/javascript" src="assets/javascript/directions.js"></script>
+        <script type="text/javascript" src="assets/javascript/input.js"></script>
+        <script type="text/javascript" src="assets/javascript/map_tools.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+
+</html>
